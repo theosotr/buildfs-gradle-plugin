@@ -9,7 +9,7 @@ buildscript {
 
   dependencies {
       classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.3.50"
-      classpath "com.gradle.publish:plugin-publish-plugin:0.10.0"
+      classpath "com.gradle.publish:plugin-publish-plugin:0.12.0"
   }
 }
 
@@ -31,7 +31,7 @@ pluginBundle {
   vcsUrl = "https://github.com/theosotr/buildfs-gradle-plugin.git"
   tags = ['task', 'dependencies', 'inputs', 'outputs']
   plugins {
-    FSRacerPlugin {
+    BuildFSPlugin {
       id = 'org.buildfs.gradle.buildfs-plugin'
       displayName = 'Gradle Task Tree Plugin'
       description = 'A Gradle Plugin that instruments a Gradle project so that it displays the dependencies, the inputs, and the outputs of every Gradle task'
